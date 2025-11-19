@@ -11,6 +11,6 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'check-upcoming-lessons': {
         'task': 'lessons.tasks.check_upcoming_lessons',
-        'schedule': crontab(minute='*/5'),  # каждые 5 минут
+        'schedule': crontab(minute='*/10'),  # каждые 10 минут
     },
 }

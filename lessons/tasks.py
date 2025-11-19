@@ -52,6 +52,6 @@ def check_upcoming_lessons():
             args=[lesson.id],
             eta=lesson.start_time
         )
-        logger.warning(f"Запланировано уведомление для урока '{lesson.name}' на {lesson.start_time}")
+        logger.warning(f"Запланировано уведомление для урока '{lesson.name}' на {human_local_time(lesson.start_time)}")
 
     return f"Проверено уроков: {upcoming_lessons.count()}"
