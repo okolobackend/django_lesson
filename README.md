@@ -26,9 +26,6 @@ http://localhost:8000
 2. Запустите проект:
    ```bash
    docker compose up
-3. Если не прошла миграция, то 
-    ```bash
-    docker compose exec web python manage.py migrate
 
 ### Себе на будущее.
 1. Сделать валидацию веб-форм для вводимых дат.

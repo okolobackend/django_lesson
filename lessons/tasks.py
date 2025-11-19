@@ -2,6 +2,7 @@ from celery import shared_task
 from django.utils import timezone
 from .models import Lesson, Student
 import logging
+from tools import human_local_time
 
 logger = logging.getLogger(__name__)
 
@@ -12,7 +13,7 @@ def send_register_lesson_notification(lesson_id: int, student_id: int) -> str:
         lesson = Lesson.objects.get(id=lesson_id)
         student = Student.objects.get(id=student_id)
         # Имитация отправки уведомления
-        logger.warning(f"Привет, {student.name}. Вы записаны на урок '{lesson.name}'. Начало в {lesson.start_time}")
+        logger.warning(f"Привет, {student.name}. Вы записаны на урок '{lesson.name}'. Начало в {human_local_time(lesson.start_time)}")
         return f"Уведомления о записи на урок {lesson.name} отправлены"
     except Lesson.DoesNotExist:
         return "Урок не найден"
