@@ -2,7 +2,7 @@ from celery import shared_task
 from django.utils import timezone
 from .models import Lesson, Student
 import logging
-from tools import human_local_time
+from .tools import human_local_time
 
 logger = logging.getLogger(__name__)
 
