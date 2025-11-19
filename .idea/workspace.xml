@@ -35,7 +35,8 @@
     &quot;Python.manage.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/golubev/projects/python/django_lesson/.venv/bin/celery&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/golubev/projects/python/django_lesson/.venv/bin/celery&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -118,9 +119,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.django_lesson" />
-      <item itemvalue="Python.celery" />
       <item itemvalue="Python.celery beat" />
+      <item itemvalue="Python.celery" />
+      <item itemvalue="Python.django_lesson" />
     </list>
   </component>
   <component name="SharedIndexes">
